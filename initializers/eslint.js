@@ -1,5 +1,6 @@
-module.exports = async function(app, log) {
-  if (app.env === 'production') return
+module.exports = async function(app, log, config) {
+  const shouldRun = config.get('quadro.test.eslint.force') || app.isTestEnv
+  if (!shouldRun) return
 
   log.trace('Running ESLint')
 
