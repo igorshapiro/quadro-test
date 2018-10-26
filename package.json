@@ -4,5 +4,16 @@
   "main": "index.js",
   "peerDependencies": {
     "quadro": "^2.0.0"
+  },
+  "dependencies": {
+    "bdd-lazy-var": "^2.5.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-subset": "^1.6.0",
+    "mocha": "^5.2.0",
+    "nock": "^10.0.1",
+    "sinon": "^7.1.0",
+    "sinon-chai": "^3.2.0",
+    "supertest": "^3.3.0"
   }
 }
