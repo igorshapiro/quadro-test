@@ -1,0 +1,18 @@
+{
+  "extends": "standard",
+  "rules": {
+    "space-before-function-paren": "off",
+    "semi": "off"
+  },
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "globals": {
+    "Q": true,
+    "QT": true,
+    "expect": true,
+    "def": true,
+    "get": true
+  }
+}

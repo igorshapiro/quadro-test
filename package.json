@@ -1,6 +1,6 @@
 {
   "name": "quadro-test",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "scripts": {
     "test": "node test/run.js test"
@@ -9,23 +9,23 @@
     "quadro": "^2.0.0"
   },
   "devDependencies": {
-    "quadro": "https://github.com/igorshapiro/quadro#v2.0.0"
+    "quadro": "git+https://github.com/igorshapiro/quadro.git#v2.0.0"
   },
   "dependencies": {
     "bdd-lazy-var": "^2.5.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-subset": "^1.6.0",
-    "eslint": "^5.7.0",
+    "eslint": "^5.9.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "mocha": "^5.2.0",
-    "nock": "^10.0.1",
-    "sinon": "^7.1.0",
-    "sinon-chai": "^3.2.0",
+    "nock": "^10.0.2",
+    "sinon": "^7.1.1",
+    "sinon-chai": "^3.3.0",
     "supertest": "^3.3.0"
   }
 }
