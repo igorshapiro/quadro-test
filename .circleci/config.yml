@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    working_directory: /tmp/quadro
+    docker:
+      - image: shapigor/quadro
+    steps:
+      - checkout
+      - restore_cache:
+          key: quadro-test-{{ checksum "package.json" }}
+      - run: npm install
+      - run: npm test
+      - save_cache:
+          key: quadro-test-{{ checksum "package.json" }}
+          paths:
+            - node_modules
